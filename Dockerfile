@@ -1,4 +1,4 @@
-FROM alpine:3.10.0
+FROM ruby:2.6
 
 RUN echo 'hello'
 RUN echo 'world'
