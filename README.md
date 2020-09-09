@@ -1,1 +1,1 @@
-# hadolint-sample
+# Dockerfile CI Sample
