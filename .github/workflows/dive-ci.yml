@@ -1,0 +1,16 @@
+name: "Dive CI"
+
+on: [push]
+
+jobs:
+  dive:
+    runs-on: ubuntu-latest
+    name: Analyze image efficiency
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build image
+      run: docker build -t sample:latest .
+    - name: Dive
+      uses: yuichielectric/dive-action@latest
+      with:
+        image: 'sample:latest'
