@@ -14,4 +14,3 @@ jobs:
       uses: yuichielectric/dive-action@master
       with:
         image: 'sample:latest'
-        config-directory: /
