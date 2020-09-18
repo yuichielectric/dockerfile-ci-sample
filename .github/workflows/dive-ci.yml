@@ -14,3 +14,4 @@ jobs:
       uses: yuichielectric/dive-action@post-pr-comment-on-failure
       with:
         image: 'sample:latest'
+        github-token: ${{ secrets.GITHUB_TOKEN }}
