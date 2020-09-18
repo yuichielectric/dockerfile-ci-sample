@@ -11,6 +11,6 @@ jobs:
     - name: Build image
       run: docker build -t sample:latest .
     - name: Dive
-      uses: yuichielectric/dive-action@master
+      uses: yuichielectric/dive-action@post-pr-comment-on-failure
       with:
         image: 'sample:latest'
