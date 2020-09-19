@@ -1,6 +1,6 @@
 name: "Dive CI"
 
-on: [push]
+on: pull_request
 
 jobs:
   dive:
