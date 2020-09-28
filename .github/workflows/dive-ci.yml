@@ -11,7 +11,7 @@ jobs:
     - name: Build image
       run: docker build -t sample:latest .
     - name: Dive
-      uses: yuichielectric/dive-action@migrate-to-typescript
+      uses: yuichielectric/dive-action@v0.0.3
       with:
         image: 'sample:latest'
         github-token: ${{ secrets.GITHUB_TOKEN }}
